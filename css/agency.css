@@ -1,0 +1,190 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+
+}
+
+@font-face{
+	font-family: 'GothamMedium';
+	src: url('../font/GothamMedium.otf');
+}
+
+header{
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+}
+
+
+footer{
+
+	height:100px;
+	background-color: none;
+	font-size: 22px;
+	position: sticky;
+    bottom: 0;
+    z-index: 0;
+
+
+}
+
+h1{
+
+	font-family: 'GothamMedium';
+    font-size: 40px;
+    color: white;
+    position: relative;
+    text-shadow: 7px 5px 2px black;
+}
+
+h2{
+	font-family: 'GothamMedium';
+    font-size: 22px;
+	position: relative;
+    text-align: center;
+    margin-top: 35px;
+}
+
+section{
+	position: relative;
+	z-index: 1;
+}
+
+#headerr {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	text-align: center;
+	width: 100%;
+	
+}
+
+.headerr_choice{
+	font-family: 'GothamMedium';
+	font-size: 20px;
+	color: white;
+	margin:0 10px;
+	text-decoration: none;
+
+}
+
+.headerr_choice:hover{
+	color:hsla(0,0%,100%,.5);
+	cursor: pointer;
+	
+}
+
+#headerr_choice_2{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	text-align: center;
+	position: absolute;
+    right: 45px;
+
+
+}
+
+.headerr_home{
+	position: relative;
+	top: -66px;
+
+}
+.headerr_home_bouton{
+
+	position: sticky;
+
+}
+
+
+.headerr_bouton{
+	margin: 10px;
+    position: relative;
+    margin:10px;
+    padding: 11px 45px;
+	z-index: 10;
+	cursor: pointer;
+	border-radius: 60px;
+	height: 50px;
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+	color: black;
+	font-family: 'GothamMedium'
+}
+
+.headerr_ex{
+	position: relative;
+    left: 40%;
+}
+
+.headerr_search{
+	height: 50px;
+    width: 200px;
+    font-family: 'GothamMedium';
+    border-radius:60px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.main_first{
+	width: 100vw;
+	height: 100vh;
+	background: url(../img/first.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;    			
+}
+
+.info{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+/*---------FOOTER-----------*/
+
+.footer_contact{
+	position: relative;
+    text-align: center;
+}
+
+.footer_social{
+	margin: 0 10px;
+
+
+}
+
+.footer_copy{
+	font-family: 'GothamMedium';
+	font-size: 15px;
+
+}
+
+
+#overlay6{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#modalCheck6{
+    display: none;
+}
+#modalCheck6:checked + #overlay6{
+    display: block;
+}
+
+.products{
+	z-index: 10;
+    background-color: #f9fafc;
+}
+
