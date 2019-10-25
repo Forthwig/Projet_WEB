@@ -40,6 +40,8 @@
     </div>
 
 </body>
+<?php require 'footer.inc.php' ; ?>
+
 
 </HTML>
 
