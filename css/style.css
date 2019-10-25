@@ -10,6 +10,7 @@ html,body{
     box-sizing:border-box;
 
 }
+
 @font-face{
     font-family: 'GothamMedium';
     src: url('../font/GothamMedium.otf');
@@ -40,6 +41,7 @@ form {
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 #log ,.log_h1{
     left: 15%;
     position: relative;
