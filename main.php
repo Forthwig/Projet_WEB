@@ -7,7 +7,7 @@
 
 	<div class="info">
 
-		<h1>BADASS WEBSITE,FOR BADASS CUSTOMERS</h1>
+		<h1>BADASS WEBSITE, FOR BADASS CUSTOMERS</h1>
 
 	</div>
 

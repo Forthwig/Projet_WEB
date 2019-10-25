@@ -4,14 +4,14 @@
 
 
     <section class="log">
-    <form action="verification_log.php" method="POST">
+    <form action="verification_login.php" method="POST">
                 <h1 class="log_h1">Connexion</h1>
                 
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Please enter your username" name="username" required>
+                <input type="text" placeholder="Please enter your username" name="username" required minlength="1" maxlength="20">
 
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Please enter your password" name="password" required>
+                <input type="password" placeholder="Please enter your password" name="password" required minlength="1">
 
                 <div class="log_send">
                 <input type="submit" id='submit' value='LOGIN' >
@@ -30,17 +30,16 @@
       <section class="log">
     <label for="modallog" style="position: absolute;right: 0;left:auto;" class="headerr_ex"><img alt="Fermer" title="Fermer la fenêtre" class="my_btn_close" src="./img/close.png">
 
-          
-    </label><form action="verification_log.php" method="POST">
+    </label><form action="verification_register.php" method="POST">
                 <h1 class="log_h1">Inscription</h1>
                 
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Please enter your username" name="username" required="">
+                <input type="text" placeholder="Please enter your username" name="username" required minlength="1" maxlength="20">
 
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Please enter your password" name="password" required="">
-                <label><b>Password</b></label>
-                <input type="password" placeholder="Please enter again your password" name="password2" required="">
+                <input type="password" placeholder="Please enter your password" name="password" required minlength="1">
+                <label><b>Confirm password</b></label>
+                <input type="password" placeholder="Please enter again your password" name="confirmPassword" required minlength="1">
 
                 <div class="log_send">
                 <input type="submit" id="submit" value="SIGN IN">
