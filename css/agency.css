@@ -188,3 +188,7 @@ section{
     background-color: #f9fafc;
 }
 
+.cat{
+  width:100%;
+	text-transform: UPPERCASE;
+}

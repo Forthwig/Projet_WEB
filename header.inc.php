@@ -34,10 +34,10 @@
 
             					<label for="modalCheck6" class="headerr_ex"><img alt="Fermer" title="Fermer la fenêtre" class="my_btn_close" src="./img/close.png" /></label> 
 
-            					<form>
+            					<form action = "search.php" method="get">
   									<div>
     									<input type="search" id="maRecherche" name="q" placeholder="Search on the website…" class="headerr_search">
-    									<button class="headerr_bouton">Search</button>
+    									<input class="headerr_bouton" type="submit">
   									</div>
 								</form>
         					</div>
