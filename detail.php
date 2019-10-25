@@ -16,14 +16,18 @@
                         </div>
                         <div id="detail_price">
                             Prix : <?php echo $prod["price"] ?> €
-                        </div>
-                        <div id="detail_quantity">
-                            Quantité :
-                            <input type="number" name="quantite:" value="1" min="0">
-                        </div>
+                        </div>                        
                         <div>
-                            <button type="button" id="detail_cart">Ajouter au panier</button>
+                            <form action="add_cart.php" method="post">
+                                <?php /*<div id="detail_quantity">
+                                    Quantité :
+                                    </div>*/ ?>
+                                <input type="hidden" name="qtt" value="1" min="0">
+                                <input type="hidden" name="id_prod" value="<?php echo $prod["id"] ?>">
+                                <button type="submit" id="detail_cart">Ajouter au panier</button>
+                            </form>
                         </div>
+                    </div>
                         <div id="detail_stock">
                             En stock
                         </div>

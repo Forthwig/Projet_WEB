@@ -6,63 +6,40 @@
 </HEAD>
 
 <?php require 'header.inc.php'; ?>
+<?php require 'data_base.php'; ?>
 
-<BODY>
-    <table style="position: relative;top: 25%;">
+<body>
+    <div class="cart_h">
+        <h1>Votre panier</h1>
+    </div>
+    <div class="prod_container">
+            <?php 
+            foreach (getProdUser(1) as $prod) { ?>
+                    <div class="cart_prod">
+                        <br />
+                            <img src="img/<?php echo $prod["img"] ?>.jpg" height="50px" width="75px" />
+                        <br />
+                        <br />
+                        <?php echo $prod["name"] ?>
+                        <br />
+                        <?php echo $prod["qtt"] ?>
+                        <br />
+                
+                        <form action="cart_function.php" method="post">
+                            <input type="hidden" name="remove_prod">
+                            <input type="hidden" name="prod" value="<?php echo $prod["id"] ?>">
+                            <button type="submit">supprimer</button>
+                        </form>
+                        
+                        <br />
+                        <br />
+                    </div>
+            <?php } ?>
 
-        <thead>
-            <tr>
-                <th colspan="2">Your cart</th>
-            </tr>
-        </thead>
+            
+    </div>
 
-        <tbody>
-            <tr>
-                <td>
-                    <p>
-                        <br />
-                            <img src="img/popo.png" height="50px" width="75px" />
-                        <br />
-                        <br />
-                        Flower for lover
-                        <br />
-                        2
-                        <br />
-                        <br />
-                        <input type="button" class="bouton1" value="+1">
-                        <input type="button" class="bouton1" value="-1">
-                        <input type="button" class="bouton1" value="Supprimer">
-                        <br />
-                        <br />
-                    </p>
-                </td>
-
-                <td>
-<p>
-    <br />
-    <img src="img/gun.png"
-         height="100px"
-         width="75px" />
-
-    <br />
-    <br />
-    Gun
-    <br />
-    1
-    <br />
-    <br />
-    <input type="button" class="bouton1" value="+1">
-    <input type="button" class="bouton1" value="-1">
-    <input type="button" class="bouton1" value="Supprimer">
-    <br />
-    <br />
-</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-</BODY>
+</body>
 
 </HTML>
 
