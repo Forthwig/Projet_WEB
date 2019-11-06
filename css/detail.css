@@ -1,0 +1,126 @@
+.detail_style{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#detail_section{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    max-width: 80%;
+}
+
+#detail_title{
+    color: rgba(32, 32, 32, 0.7);
+    font-size: 3em;
+    padding-right: 0.5em;
+    text-align: center;
+    border-right-style: solid;
+    border-right-color: crimson;
+    border-bottom-style: solid;
+    border-bottom-color: crimson;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    position: relative;
+    text-align: right;
+    text-shadow: none;
+}
+
+#detail_img{
+    position: relative;
+    max-width: 40%;
+    max-height: 40%;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.7);
+    border-width: 1px;
+    overflow-x: auto;
+    overflow-y: auto;
+    float: left;
+    margin: 2ch;
+}
+
+#detail_img:hover{
+    opacity: 0.7;
+    position: static;
+    -webkit-transform:scale(1.50); /* Safari et Chrome */
+    -moz-transform:scale(1.50); /* Firefox */
+    -ms-transform:scale(1.50); /* Internet Explorer 9 */
+    -o-transform:scale(1.50); /* Opera */
+    transform:scale(1.50);
+}
+
+#detail_price{
+    position: relative;
+    left: 10%;
+    width: 20%;
+    height: 2em;
+    margin-top: 2em;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: crimson;
+    border-bottom-width: 2px;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+#detail_quantity{
+    position: relative;
+    left: 7.5%;
+    width: 25%;
+    height: 2em;
+    margin-top: 2em;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: crimson;
+    border-bottom-width: 2px;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+#detail_stock{
+    position: relative;
+    left: 7.5%;
+    width: 25%;
+    height: 2em;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(54, 190, 35, 0.705);
+    overflow: auto;
+}
+
+#detail_quantity input{
+    width: 20%;
+    font-size: 1em;
+}
+
+#detail_cart{
+    position: relative;
+    left: 7.5%;
+    width: 25%;
+    height: 2.5em;
+    padding: 0.5em;
+    margin-top: 2em;
+    text-align: center;
+    background-color: #ff0037;
+    border-radius: 7px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    overflow: auto;
+}
+
+#detail_cart:hover{
+    background-color: crimson; 
+}
+
+#detail_description{
+    padding: 1ch;
+}
+
+#detail_footer{
+    position: sticky; 
+}
