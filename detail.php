@@ -46,6 +46,6 @@
                 <?php } ?>
                 
                 <?php
-            }else{ header("Location: main.php");} ?>
+            }else{ header("Location: index.php?page=main");} ?>
     </body>
 </html>

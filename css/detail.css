@@ -44,11 +44,11 @@
 #detail_img:hover{
     opacity: 0.7;
     position: static;
-    -webkit-transform:scale(1.50); /* Safari et Chrome */
-    -moz-transform:scale(1.50); /* Firefox */
-    -ms-transform:scale(1.50); /* Internet Explorer 9 */
-    -o-transform:scale(1.50); /* Opera */
-    transform:scale(1.50);
+    /*-webkit-transform:scale(1.50); /* Safari et Chrome */
+    /*-moz-transform:scale(1.50); /* Firefox */
+    /*-ms-transform:scale(1.50); /* Internet Explorer 9 */
+    /*-o-transform:scale(1.50); /* Opera */
+    /*transform:scale(1.50); */
 }
 
 #detail_price{

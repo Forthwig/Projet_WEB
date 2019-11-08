@@ -22,7 +22,7 @@
 					<a id="top" class="headerr_home_bouton" ><img src="img/aa.png" class="headerr_home"></a>
 				</div>
 				
-				<div><a href="main.php" class="headerr_choice" style="text-decoration: none;"> HOME </a></div>
+				<div><a href="index.php?page=main" class="headerr_choice" style="text-decoration: none;"> HOME </a></div>
 
 				<div class="headerr_choice">
 
@@ -47,8 +47,8 @@
 
 				<div id="headerr_choice_2">
 
-				<div class="headerr_choice"><a href="login.php" class="headerr_choice" style="text-decoration: none;"> SIGN </a></div>
-				<div><a href="Panier.php" class="headerr_choice" style="text-decoration: none;"> MY CART</a></div>
+				<div class="headerr_choice"><a href="index.php?page=login" class="headerr_choice" style="text-decoration: none;"> SIGN </a></div>
+				<div><a href="index.php?page=panier" class="headerr_choice" style="text-decoration: none;"> MY CART</a></div>
 
 				</div>
 

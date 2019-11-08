@@ -7,8 +7,17 @@
 <section class="main_first" id="top">
 
 	<div class="info">
-
-		<h1>BADASS WEBSITE,FOR BADASS CUSTOMERS</h1>
+    <!-- Au cas où username n'est pas défini -->
+    <?php
+    if(isset($_SESSION['username']))
+    {
+    ?>
+    <h1>Hi <?php echo $_SESSION['username'] ?> ! <br/></h1>
+    <?php
+    }
+    ?>
+    
+		<h1>BADASS WEBSITE, FOR BADASS CUSTOMERS</h1>
 
 	</div>
 
