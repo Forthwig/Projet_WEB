@@ -1,10 +1,8 @@
-<?php require 'header.inc.php'; ?>
-
 <link rel="stylesheet" href="css/style.css" />
 
 
     <section class="log">
-    <form action="verification_login.php" method="POST">
+    <form action="index.php?page=verification_login" method="POST">
                 <h1 class="log_h1">Connexion</h1>
                 
                 <label><b>Username</b></label>
@@ -30,7 +28,7 @@
       <section class="log">
     <label for="modallog" style="position: absolute;right: 0;left:auto;" class="headerr_ex"><img alt="Fermer" title="Fermer la fenêtre" class="my_btn_close" src="./img/close.png">
 
-    </label><form action="verification_register.php" method="POST">
+    </label><form action="index.php?page=verification_register" method="POST">
                 <h1 class="log_h1">Inscription</h1>
                 
                 <label><b>Username</b></label>
@@ -49,5 +47,3 @@
     </section></div>
   </div>
 </label> 
-
-<?php require 'footer.inc.php'; ?>

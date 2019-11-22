@@ -1,5 +1,4 @@
-<?php require 'header.inc.php'; ?>
-<?php require 'data_base.php'; ?>
+
 
 <link rel="stylesheet" href="css/search.css">
 <link rel="stylesheet" href="css/test.css">
@@ -25,7 +24,3 @@
       <?php
   } ?>
 </section>
-
-<?php require 'footer.inc.php' ; ?>
-
-

@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="css/detail.css" />
-<?php require 'header.inc.php'; ?>
-    <body style="background-color: gray">
-    <?php require 'data_base.php'; ?>
+    
         <?php if(isset($_GET["id"])){
                 $prod = getProductById($_GET["id"]);
                 if (count($prod)) {
@@ -18,7 +16,7 @@
                             Prix : <?php echo $prod["price"] ?> €
                         </div>                        
                         <div>
-                            <form action="add_cart.php" method="post">
+                            <form action="index.php?page=add_cart" method="post">
                                 <?php /*<div id="detail_quantity">
                                     Quantité :
                                     </div>*/ ?>
@@ -35,8 +33,6 @@
                     <div id ="detail_description">
                         <p style="text-indent: 2ch;"><?php echo $prod["des"] ?></p>
                     </div>
-                    
-                        <?php require 'footer.inc.php' ; ?>
                 </section>
                 <?php }else{
                     header("HTTP/1.0 404 Not Found");?>
@@ -47,5 +43,3 @@
                 
                 <?php
             }else{ header("Location: index.php?page=main");} ?>
-    </body>
-</html>

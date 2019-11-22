@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-
-	<title>Peace & War </title>
-
-	<link rel="icon" type="ico"  href="img/ico/logo.ico"/>
-	<link rel="stylesheet" href="css/agency.css"/>
-
-</head>
-
-
-
-<body>
 
 <header>
 
@@ -34,7 +20,7 @@
 
             					<label for="modalCheck6" class="headerr_ex"><img alt="Fermer" title="Fermer la fenêtre" class="my_btn_close" src="./img/close.png" /></label> 
 
-            					<form action = "search.php" method="get">
+            					<form action = "index.php?page=search" method="get">
   									<div>
     									<input type="search" id="maRecherche" name="q" placeholder="Search on the website…" class="headerr_search">
     									<input class="headerr_bouton" type="submit">
@@ -47,7 +33,13 @@
 
 				<div id="headerr_choice_2">
 
-				<div class="headerr_choice"><a href="index.php?page=login" class="headerr_choice" style="text-decoration: none;"> SIGN </a></div>
+				<div class="headerr_choice">
+				<?php if(isset($user)){ ?>
+					<a href="index.php?page=logout" class="headerr_choice" style="text-decoration: none;"> SIGN OUT </a>
+				<?php }else{ ?>
+					<a href="index.php?page=login" class="headerr_choice" style="text-decoration: none;"> LOG IN </a>
+				<?php } ?>
+				</div>
 				<div><a href="index.php?page=panier" class="headerr_choice" style="text-decoration: none;"> MY CART</a></div>
 
 				</div>

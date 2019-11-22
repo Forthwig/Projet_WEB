@@ -1,8 +1,6 @@
-<?php require 'header.inc.php'; ?>
-<?php require 'data_base.php'; ?>
+
 
 <link rel="stylesheet" href="css/test.css">
-
 
 <section class="main_first" id="top">
 
@@ -16,7 +14,7 @@
     <?php
     }
     ?>
-    
+
 		<h1>BADASS WEBSITE, FOR BADASS CUSTOMERS</h1>
 
 	</div>
@@ -43,7 +41,3 @@
   
   ?>
 </section>
-
-<?php require 'footer.inc.php' ; ?>
-
-

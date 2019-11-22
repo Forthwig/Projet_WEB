@@ -98,6 +98,8 @@ function  getProductsByOrderId($orderId) {
     return  executeQuery($query, $params);
 }
 
+// ---------- CART ---------
+
 function addProdToCart($userId,$prodId,$qt){
     $params = array('prodId' => $prodId,'userId' =>$userId,'qt' =>$qt);
     $query = 'INSERT INTO cart (user_id,produit_id,qtt)
@@ -124,6 +126,24 @@ function removeProd($userId,$prodId){
     $query = 'DELETE FROM cart WHERE user_id=:userId AND produit_id=:prodId';
     return  executeQuery($query, $params);
 }
+
+
+// USER QUERY DATABASE
+
+
+function getUser($userName){
+
+    $params = array('userName' => $userName);
+    $query = 'SELECT * FROM user WHERE username=:userName';
+    return  executeQuery($query, $params);
+}
+
+function getUserRaw($userName,$password){
+    $params = array('userName' => $userName,'password' => $password);
+    $query = 'SELECT username FROM user WHERE username=:userName AND password=:password';
+    return  executeQuery($query, $params);
+}
+
 
 
 ?>
